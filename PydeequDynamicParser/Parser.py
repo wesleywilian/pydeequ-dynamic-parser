@@ -1,3 +1,5 @@
+import json
+
 class pydeequDynamicParser:
     pydeequ_check_instance = None
     user_checks = None
@@ -5,7 +7,7 @@ class pydeequDynamicParser:
     
     def __init__(self, pydeequ_check_instance, user_checks):
         self.pydeequ_check_instance = pydeequ_check_instance
-        self.user_checks = user_checks
+        self.user_checks = json.loads(user_checks) if type(user_checks) is str else user_checks
         self.functions_map = {"satisfies": self.dq_satisfies,
                  "isUnique": self.dq_isunique,
                  "containsEmail": self.dq_contains_email,
