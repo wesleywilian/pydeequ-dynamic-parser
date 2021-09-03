@@ -3,13 +3,13 @@
 
 Python library which makes it possible to use validation rules in [pydeequ](https://github.com/awslabs/python-deequ) based on json/dict structures.
 
-# Installing
+## Installing
 
 ```shell
 pip install PydeequDynamicParser
 ```
 
-# Usage
+## Usage
 
 ```python
 # User Dynamic Checks
@@ -40,9 +40,13 @@ import PydeequDynamicParser
 check_instance_parsed = PydeequDynamicParser.Parser(check, all_checks).parse()
 ```
 
-# Currently supported validations
+## Currently supported validations
 - Constraints
   - isUnique
   - satisfies
   - containsEmail
   - isComplete
+
+## Check it out too
+
+- [pydeequ-studio](https://github.com/wesleywilian/pydeequ-studio) A visual tool that assists in creating data quality validation rules for pydeequ with pydeequ-dynamic-parser.
