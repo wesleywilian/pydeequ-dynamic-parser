@@ -46,6 +46,40 @@ check_instance_parsed = PydeequDynamicParser.Parser(check, all_checks).parse()
   - satisfies
   - containsEmail
   - isComplete
+  - areComplete
+  - containsCreditCardNumber 
+  - containsSocialSecurityNumber
+  - containsURL
+	- hasApproxCountDistinct
+	- hasApproxQuantile
+	- hasCompleteness
+	- hasCorrelation
+	- hasDistinctness
+	- hasEntropy
+	- hasMax
+	- hasMaxLength
+	- hasMean
+	- hasMin
+	- hasMinLength
+	- hasMutualInformation
+	- hasUniqueValueRatio
+	- hasSize
+	- hasStandardDeviation
+	- hasSum
+	- hasUniqueness
+	- haveAnyCompleteness
+	- haveCompleteness
+	- isContainedIn
+	- isGreaterThan
+	- isGreaterThanOrEqualTo
+	- isLessThan
+	- isNonNegative
+	- isLessThanOrEqualTo
+	- isPositive
+	- hasDataType
+	- hasNumberOfDistinctValues
+	- hasHistogramValues
+	- kllSketchSatisfies
 
 ## Check it out too
 
